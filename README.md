@@ -1,3 +1,4 @@
 # validador-de-CPF
-deploy do site: validador-cpfmarcelo.netlify.app
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e154f4c9-d0a6-466d-b4ab-e81037e5c80b/deploy-status)](https://app.netlify.com/sites/validador-cpfmarcelo/deploys)
+deploy do site: cpf-validador.netlify.app 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b3e71d98-9766-40e5-89e9-4394f2f2265e/deploy-status)](https://app.netlify.com/sites/cpf-validador/deploys)
