@@ -22,11 +22,13 @@ function validaCPF() {
 
    if(digito1 && digito2) {
     mostraResult('CPF valido', 'green')
+    adicionarRegistro(cpf, "CPF Valido")
     return;
    }
 
    if(!digito1 || !digito2) {
     mostraResult('CPF invalido', 'red')
+    adicionarRegistro(cpf, "CPF Invalido")
     return;
    }
 }
@@ -63,4 +65,23 @@ function mostraResult(texto, cor) {
 
 function verificarDigitoRepetidos(cpf) {
     return cpf.split('').every((d) => d === cpf[0]);
+}
+
+function adicionarRegistro(cpf, situacao) {
+    const registro = document.getElementById('registro');
+    let cpfFormatado = "";
+    for(let i = 0; i < cpf.length; i++) {
+        if (i == 3 || i == 6) {
+            cpfFormatado += ".";
+        }
+
+        if(i == 9) {
+            cpfFormatado +="-";
+        }
+        cpfFormatado += cpf[i];
+    }
+
+    const item = document.createElement('option');
+    item.text = `${cpfFormatado}  =  ${situacao}`;
+    registro.appendChild(item);
 }
