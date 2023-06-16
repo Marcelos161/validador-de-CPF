@@ -1,5 +1,55 @@
+* {
+    margin: 0;
+}
+
+a {
+    color: white;
+}
+
+nav {
+    margin-inline: 50px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     text-align: center;
+
+    background-color: white;
+    border-radius: 2%;
+
+    box-shadow: 1px 1px 10px 0px ;
+
+    width: 400px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #1877f2;
+    width: 100%;
+
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.nav > h1 {
+    justify-self: center;
+
+    color: white;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .body input {
